@@ -15,7 +15,7 @@ static struct {
     const char *ssid;
     const char *password;
 } wifi_list[] __attribute__((unused)) = {
-    {.ssid = "OTA", .password = "12345678"},
+//    {.ssid = "OTA", .password = "12345678"},
     {.ssid = "nvn-2.4g", .password = "E9RKD2HG"},
     // Add your WAP like this:
     // {.ssid = "your ssid", .password = "your password"},
@@ -23,7 +23,7 @@ static struct {
 
 #define WIFI_LIST_SIZE (sizeof(wifi_list) / sizeof(wifi_list[0]))
 
-#define USE_MDNS       1
+#define USE_MDNS       0
 // Use the address "dap.local" to access the device
 #define MDNS_HOSTNAME "dap"
 #define MDNS_INSTANCE "DAP mDNS"
